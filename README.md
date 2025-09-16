@@ -14,7 +14,6 @@ A Python implementation of an optimal patient-doctor assignment system using the
 - [Algorithm Description](#algorithm-description)
 - [Experimental Setup](#experimental-setup)
 - [Design Decisions and Model Assumptions](#design-decisions-and-model-assumptions)
-- [Usage](#usage)
 - [Example Output](#example-output)
 - [Team Contributions](#team-contributions)
 
@@ -113,31 +112,6 @@ doc_cap = {
 
 4. **Error Handling**:
    - Validates that total doctor capacity ≥ number of patients
-
-## Usage
-
-```python
-from patient_doctor_assignment import KM_solve
-
-# Define patient preferences and doctor capacities
-patient_pref = {
-    'Sam': ['doctor1', 'doctor3', 'doctor4', 'doctor2'],
-    'Tom': ['doctor2', 'doctor1', 'doctor3', 'doctor4'],
-    # ... more patients
-}
-
-doctor_capacity = {
-    'doctor1': 1,
-    'doctor2': 1,
-    'doctor3': 1,
-    'doctor4': 2,
-}
-
-# Solve the assignment problem
-final_score, assignments = KM_solve(patient_pref, doctor_capacity)
-
-# Results are automatically printed during execution
-```
 
 ## Example Output
 
