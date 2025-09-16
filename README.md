@@ -41,6 +41,7 @@ pip install numpy scipy num2words
 You can also install all dependencies at once:
 ```bash
 pip install -r requirements.txt
+```
 
 ## Algorithm Description
 
