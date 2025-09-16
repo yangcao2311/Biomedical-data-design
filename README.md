@@ -117,17 +117,17 @@ doc_cap = {
 
 ```
 --- Allocation Process ---
-Assign patient 'Sam' to doctor 'doctor1' (the first choice, grade: 4)
-Assign patient 'Tom' to doctor 'doctor2' (the first choice, grade: 4)
-Assign patient 'Stella' to doctor 'doctor4' (the second choice, grade: 3)
-Assign patient 'Tim' to doctor 'doctor4' (the second choice, grade: 3)
-Assign patient 'David' to doctor 'doctor3' (the first choice, grade: 4)
+Assign patient 'Sam' to doctor 'Doctor1' (the first choice, grade: 4)
+Assign patient 'Tom' to doctor 'Doctor2' (the first choice, grade: 4)
+Assign patient 'Stella' to doctor 'Doctor4' (the second choice, grade: 3)
+Assign patient 'Tim' to doctor 'Doctor4' (the second choice, grade: 3)
+Assign patient 'David' to doctor 'Doctor3' (the first choice, grade: 4)
 
 --- Final allocation results ---
-doctor1 (Capacity: 1): Sam
-doctor2 (Capacity: 1): Tom
-doctor3 (Capacity: 1): David
-doctor4 (Capacity: 2): Stella, Tim
+Doctor1 (Capacity: 1): Sam
+Doctor2 (Capacity: 1): Tom
+Doctor3 (Capacity: 1): David
+Doctor4 (Capacity: 2): Stella, Tim
 
 Total patient satisfaction score: 18
 ```
