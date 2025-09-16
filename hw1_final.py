@@ -39,7 +39,7 @@ def KM_solve(patient_pref, doc_cap):
         raise ValueError("The capacity of the doctors doesn't satisfy the patients' needs.")
     
     ### Cost matrix
-    # Set up the grade rule, higher grade is better
+    # Set up the score rule, higher score is better
     max_score = len(doctors)
     
     # Initialize basic matrix. row: patients, column: doctors
@@ -79,7 +79,7 @@ def KM_solve(patient_pref, doc_cap):
         # Add the patient to the corresponding doctor list
         assignment[doc_name].append(patient)
         
-        # Calculate the grade
+        # Calculate the score
         cost = cost_matrix[patient_index][doc_index]
         score = max_score - cost
         final_score += score
@@ -88,7 +88,7 @@ def KM_solve(patient_pref, doc_cap):
         rank = patient_pref[patient].index(doc_name) + 1
         rank_ordinal = num2words(rank, to='ordinal')
         
-        print(f"Assign patient '{patient}' to doctor '{doc_name}' (the {rank_ordinal} choice, grade: {score})")
+        print(f"Assign patient '{patient}' to doctor '{doc_name}' (the {rank_ordinal} choice, score: {score})")
     
     return final_score, assignment
 
